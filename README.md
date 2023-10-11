@@ -17,7 +17,7 @@
 
 配置文件  config.yml
 
-`
+~
 mail_to: "xxxx@qq.com"
 
 smtp:
@@ -26,6 +26,6 @@ smtp:
   username: "xxxxxx@qq.com"     # 你的邮箱全名
   password: ""                  # qq邮箱的授权码 hotmail邮箱则是正常的登录密码
 
-`
+~
 
 
