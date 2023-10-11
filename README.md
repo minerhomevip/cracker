@@ -1,6 +1,4 @@
-# cracker
- 
-## 私钥碰撞, 学习使用, 请勿用于其它用途.
+## 私钥碰撞, 仅限于学习, 请勿用于其它用途.
 
 用法 https://www.youtube.com/watch?v=75NIxCBut2I&t=45s
 
@@ -16,14 +14,16 @@
 
 
 配置文件  config.yml
+其它内容不必修改
+
 
 ~
-mail_to: "xxxx@qq.com"
+mail_to: ""                    # 请填写完整的邮箱
 
 smtp:
   host: "smtp.qq.com"
   port: 587
-  username: "xxxxxx@qq.com"     # 你的邮箱全名
+  username: ""                  # 你的邮箱全名
   password: ""                  # qq邮箱的授权码 hotmail邮箱则是正常的登录密码
 
 ~
