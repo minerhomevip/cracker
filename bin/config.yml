@@ -50,7 +50,7 @@ log_interval: 100    #
 subject: "恭喜, 私钥碰撞成功!"
 
 # 发送到你指定的邮箱, 可以用QQ邮箱来接收 - 你的邮箱
-mail_to: "xxxxxxxx@qq.com"
+mail_to: ""
 
 # 邮箱发送服务器, 可用qq邮箱来发送, qq邮箱设置/帐户/获取授权码
 smtp:
