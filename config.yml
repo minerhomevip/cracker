@@ -1,0 +1,62 @@
+
+
+# 私钥碰撞 - 平时电脑也是开着的, 极低的概率,
+# 思路:  钱包 助记词 私钥 随机 生成钱包
+#1, 随机生成eth钱包
+#2, 查询余额, 转帐纪录
+#  eth, bsc,
+#3, 有则存下来, 且发到指定邮箱
+#
+
+
+
+
+# 私钥碰撞
+# 随机生成私钥, 万一不小心这个钱包地址有币则把私钥, 助记词, 钱包余额发到指定邮箱. 有了私钥, 你要怎么做就是你的事了, 我的建议是通知钱包主人
+# 默认查询 eth, bsc这两条链的余额以及是否有交易纪录
+
+# 测试钱包 -  找一个有余额的的钱包测试会否正常发送到指定的邮箱
+# 0x220866B1A2219f40e72f5c628B65D54268cA3A9D   0xAb5801a7D398351b8bE11C439e05C5B3259aeC9B   0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045
+test_address: ""
+
+
+
+# 多个RPC, 每个rpc都会限制频率, 多找一些rpc
+eth_rpc:
+  - "https://1rpc.io/eth"
+  - "https://rpc.ankr.com/eth"
+
+
+
+
+
+# 多个RPC
+bsc_rpc:
+  - "https://1rpc.io/bnb"
+  - "https://rpc.ankr.com/bsc"
+
+
+
+
+# 日志
+# log_interval 0 不显示
+# log_interval 1 每个都显示
+# log_interval 100 逢100个号显示一次
+# 碰撞到则会显示
+log_interval: 100    #
+
+
+# 成功后发邮箱的标题
+subject: "恭喜, 私钥碰撞成功!"
+
+# 发送到你指定的邮箱, 可以用QQ邮箱来接收 - 你的邮箱
+mail_to: "xxxxxxxx@qq.com"
+
+# 邮箱发送服务器, 可用qq邮箱来发送, qq邮箱设置/帐户/获取授权码
+smtp:
+  host: "smtp.qq.com"
+  port: 587
+  username: ""     # 邮箱全名
+  password: ""     # qq邮箱的授权码 hotmail邮箱则是正常的登录密码
+
+
